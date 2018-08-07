@@ -13,7 +13,21 @@ p {
   pading: 10px 15px;
   border: 5px solid black ;
   font-size: 25px;
+  border-radius: 40px;
 }
 .primary-btn {
   background: #20b2AA;
+}
+.bordered,
+.primary-btn {
+  border-top: dotted 5px orange;
+  border-bottom: dotted 5px green;
+}
+h2 {
+  border-top: dotted 5px orange;
+  border-bottom: dotted 5px green;
+}
+h3 {
+  border-top: dotted 5px orange;
+  border-bottom: dotted 5px green;
 }
