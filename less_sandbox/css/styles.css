@@ -6,7 +6,7 @@ p {
   font-size: 3em;
 }
 .primary-text {
-  font-color: red;
+  font-color: #ccc;
 }
 .btn,
 .primary-btn {
@@ -33,11 +33,12 @@ h3 {
 }
 ul#lists {
   list-style: none;
+  background-color: #d9f8f6;
 }
 ul#lists li {
   padding: 10px;
   margin: 4px;
-  color: red;
+  color: #ccc;
 }
 ul#lists li a {
   color: #20b2AA;

@@ -1,8 +1,19 @@
 @background-color : #f4f4f4 ;
 @font-family : fantasy;
-@primary-color: red;
+@primary-color: #ccc;
 @secondary-color: #20b2AA;
 @line-height: 10px + 80px ;
+
+
+
+// Text Color Mixin
+
+.text-color(@a) when (lightness (@a) >= 50%){
+  color: black;
+}
+.text-color(@a) when (lightness (@a) < 50%){
+  color: white;
+}
 
 
 body {
@@ -26,7 +37,8 @@ p {
 }
 
 .primary-btn:extend(.btn , .bordered) {
-  background: @secondary-color
+  background: @secondary-color;
+  .text-color(red)
 }
 
 .bordered {
@@ -51,11 +63,11 @@ h3 {
 
 ul#lists{
   list-style:none;
+  background-color: lighten(@secondary-color , 50%);
   li{
     padding:10px;
     margin:4px;
-    color:red;
-
+    color:@primary-color;
     a{
       color:@secondary-color;
       &:hover{
