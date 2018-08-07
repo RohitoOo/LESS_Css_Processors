@@ -31,3 +31,17 @@ h3 {
   border-top: dotted 5px orange;
   border-bottom: dotted 5px green;
 }
+ul#lists {
+  list-style: none;
+}
+ul#lists li {
+  padding: 10px;
+  margin: 4px;
+  color: red;
+}
+ul#lists li a {
+  color: #20b2AA;
+}
+ul#lists li a:hover {
+  color: orange;
+}
